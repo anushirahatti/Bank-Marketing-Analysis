@@ -11,7 +11,7 @@ Most marketing is a means of introducing and enforcing a value to purchasers - c
 [Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 
 ### Team Introduction:
-Aniruddha Sudhindra Shirahatti, Chandrakanth Rajesh, Digvijay Gole, Krishna Vishwanatham, Yash Bonde. 
+Aniruddha Sudhindra Shirahatti, Chandrakanth Rajesh, Krishna Vishwanatham. 
 We are having common interest in pursuing specialization in the field of Data Science. We as a group are planning to work on Bank Marketing Data Set to implement the data mining concepts.
 
 ### Data and Source description:-
@@ -72,7 +72,15 @@ Marketing of bank products is the aggregate function absorbed at providing facil
 
 The dataset is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
 
+
+#### - Exploring protected features for Bias (Bias Detection and Mitigation)
+A machine learning model makes predictions of an outcome for a particular instance. The model makes these predictions based on a training dataset, where many other instances and actual outcomes are provided. Thus, a machine learning algorithm will attempt to find patterns, or generalizations, in the training dataset to use when a prediction for a new instance is needed. In many domains this technique, called supervised machine learning, has worked very well.
+
+However, sometimes the patterns that are found may not be desirable or may even be illegal. These are due to some features which are termed as protected variables (which have high chances of introducing bias in predictions). We have one such feature in our dataset i.e. "AGE". This raises two problems: 1) the training dataset may not be representative of the true population of people of all age groups, and 2) even if it is representative, it is illegal to base any decision on a applicant's age, regardless of whether this is a good prediction based on historical data.
+
+To check the fairness metrics, we have used AI Fairness 360 which is designed to help address this problem. Fairness metrics can be used to check for bias in machine learning workflows.
  
+
 
 
 ### Data Preparation:
@@ -83,7 +91,7 @@ Steps To Prepare The Data.
 4. Splitting the dataset into the Training set and Test set.
 5. Feature Scaling, if all the columns are not scaled correctly.
 
-So, we will be all the steps on the dataset one by one and prepare the final dataset on which we can apply regression and different algorithms.
+So, we will implement all the steps on the dataset one by one and prepare the final dataset on which we can apply classification algorithms.
 
 1. Get The Dataset.
 We need to extract data from anyone API’s. But the data could be in any form. So we need to convert it to the CSV format. CSV stands for Comma Separated Values.
@@ -106,17 +114,19 @@ We have to feed our Data Model Training and test datasets. Generally, we split t
 In a general scenario, Machine Learning is based on Euclidean distance. In our dataset we will be encountering different coulmns with different range of values. That is why this is called feature scaling. We use StandardScaler from sklearn.preprocessing to perform the scaling.
 
 ### Machine Learning:
-The algorithms that we are going to make use of include:
-
-* Decision Tree : In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. This algorithm uses a tree-like model of decisions. This algorithm in data mining helps in deriving a strategy to reach a particular goal. This is also widely used in machine learning.
+The algorithm that we have used:
 
 * Random Forest : Random Forest is a supervised classification algorithm. This algorithm helps to create a Forest and make it random. There is a direct relationship between the number of trees in the forest and the results it can get: the larger the number of trees, the more accurate the result. But one thing to note is that creating the forest is not the same as constructing the decision with information gain or gain index approach.
 
-We are planning to use ensemble methods with Decision tree and Random forest and make best prediction (whether the client will subscribe for term deposit or not) by aggregating the obtained results.
+* Decision Tree : In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. This algorithm uses a tree-like model of decisions. This algorithm in data mining helps in deriving a strategy to reach a particular goal. This is also widely used in machine learning.
+
+We have **implemented Pipelining** with (MinMaxScaler + LogisticRegression) combination and (StandardScaler + LogisticRegression) combination to automate the standard Machine Learning tasks and explore different combinations of transformers and estimators and their performance on the given dataset.
+
+We have **implemented ensemble methods** with Decision tree and Random forest to make best prediction (whether the client will subscribe for term deposit or not) by aggregating the obtained results.
 
 
 ### Evaluation:
- After understanding the sentiments of the Bank Marketing Data Set. We need to mine knowledge and capture the ideas from the dataset. In this process of capturing the insights from the data, we need to evaluate the results at each datamining phase which is a challenging task.
+ After understanding the sentiments of the Bank Marketing Data Set. We need to mine knowledge and capture the ideas from the dataset. In this process of capturing the insights from the data, we need to evaluate the results at each data mining phase which is a challenging task.
 The common problem which everyone can face is that for unbalanced Bank Marketing Data Set data streams with, for example, 90%
 of the instances in one class, the simplest classifiers will have high accuracies of at least 90%.
 
@@ -152,27 +162,19 @@ A system with the high recall but having low precision returns many results, but
 
 ### Conclusion:
 
-We will develop classification model that can predict accurately whether the client will subscribe term deposit or not.
+We have implemented **Random Forest Classifier (classification model)** that can predict accurately whether the client will subscribe term deposit or not.
 
 
 ### Contributors:
 1. Aniruddha Sudhindra Shirahatti
 2. Chandrakanth Rajesh
-3. Digvijay Gole
-4. Krishna Vishwanatham
-5. Yash Bonde
+3. Krishna Vishwanatham
 
-### TODO
-Our next steps include:
-Implementing classification algorithms to predict whether the client will subscribe term deposit or not i.e variable y.
 
 ### Contact
 Aniruddha Sudhindra Shirahatti - ashiraha@uncc.edu
 
-Digvijay Gole - dgole@uncc.edu
+Chandrakanth Rajesh - crajesh@uncc.edu
 
 Krishna Vishwanatham - kvishwa1@uncc.edu
 
-Chandrakanth Rajesh - crajesh@uncc.edu
-
-Yash Bonde - ybonde1@uncc.edu
