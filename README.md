@@ -76,7 +76,9 @@ The dataset is related with direct marketing campaigns of a Portuguese banking i
 #### - Exploring protected features for Bias (Bias Detection and Mitigation)
 A machine learning model makes predictions of an outcome for a particular instance. The model makes these predictions based on a training dataset, where many other instances and actual outcomes are provided. Thus, a machine learning algorithm will attempt to find patterns, or generalizations, in the training dataset to use when a prediction for a new instance is needed. In many domains this technique, called supervised machine learning, has worked very well.
 
-However, sometimes the patterns that are found may not be desirable or may even be illegal. These are due to some features which are termed as protected variables (which have high chances of introducing bias in predictions). We have one such feature in our dataset i.e. "AGE". This raises two problems: 1) the training dataset may not be representative of the true population of people of all age groups, and 2) even if it is representative, it is illegal to base any decision on a applicant's age, regardless of whether this is a good prediction based on historical data.
+However, sometimes the patterns that are found may not be desirable or may even be illegal. These are due to some features which are termed as protected variables (which have high chances of introducing bias in predictions). We have one such feature in our dataset i.e. "AGE". This raises two problems: 
+1. the training dataset may not be representative of the true population of people of all age groups, and 
+2. even if it is representative, it is illegal to base any decision on a applicant's age, regardless of whether this is a good prediction based on historical data.
 
 To check the fairness metrics, we have used AI Fairness 360 which is designed to help address this problem. Fairness metrics can be used to check for bias in machine learning workflows.
  
