@@ -49,7 +49,7 @@ Input variables:
 
 ### Core Technical Concepts
 
-##### - Application of the CRISP-DM Process:
+#### - Application of the CRISP-DM Process:
 **1. Business/Research Understanding Phase -** In this phase, we have explored various resources on the internet to learn about the challenges and applications of the Bank marketing dataset for data mining. We did our research on how the Bank marketing dataset can be used to uncover knowledge in various domains like branding and marketing,lending loans or capitals,morgage values,and management, as well as public and personalized insurances .
 
 **2. Data Understanding Phase -** In this phase, we will make observations by looking at the data and checking of the relationship among the variables, potential independent and dependent variables, continuous variables, flag variables, categorical varaibles, mean, median and standard deviation in the data fetaures.
