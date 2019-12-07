@@ -131,6 +131,7 @@ We have **implemented ensemble methods** with Decision tree and Random forest to
  After understanding the sentiments of the Bank Marketing Data Set. We need to mine knowledge and capture the ideas from the dataset. In this process of capturing the insights from the data, we need to evaluate the results at each data mining phase which is a challenging task.
 The common problem which everyone can face is that for unbalanced Bank Marketing Data Set data streams with, for example, 90%
 of the instances in one class, the simplest classifiers will have high accuracies of at least 90%.
+Most machine learning algorithms work best when the number of samples in each class are about equal. This is because most algorithms are designed to maximize accuracy and reduce error. In the Bank-Marketing-Analysis dataset, we have unbalanced data for the target variable 'y'. So, we have balanced it by applying OverSampling technique.
 
 We can use different evaluation techniques like:
 
