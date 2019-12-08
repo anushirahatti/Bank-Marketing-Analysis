@@ -5,7 +5,7 @@ Knowledge Discovery in Databases (Course Project - Team 8)
 ### Project Name/Intro:
 ##### - Project Name: Kdd_project_8 (Bank Marketing Analysis)
 ##### - Project Introduction:
-Most marketing is a means of introducing and enforcing a value to purchasers - consumer or business. As to bank marketing: marketing managers who work in corporate banking are responsible for coordinating and enforcing branding guidelines and standards across departments and business lines. These professionals focus on generating ideas and content for sales collateral, advertising, external websites and printed signage for events. Other duties include conducting competitive analysis, organizing direct mail campaigns, sending business and news updates to banking clients and managing online promotions. This project is about direct marketing campaign (phone calls) to convince clients to subscribe for a term deposit. Our goal is to classify whether the client will subscribe for the term deposit or not by discovering knowledge in the Bank marketing dataset and making predictions.
+Most marketing is a means of introducing and enforcing a value to purchasers - consumer or business. As to bank marketing: marketing managers who work in corporate banking are responsible for co-ordinating and enforcing branding guidelines and standards across departments and business lines. These professionals focus on generating ideas and content for sales collateral, advertising, external websites and printed signage for events. Other duties include conducting competitive analysis, organizing direct mail campaigns, sending business and news updates to banking clients and managing online promotions. This project is about direct marketing campaign (phone calls) to convince clients to subscribe for a term deposit. Our goal is to classify whether the client will subscribe for the term deposit or not by discovering knowledge in the Bank marketing dataset and making predictions.
 
 ### Dataset Link: 
 [Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
@@ -50,13 +50,13 @@ Input variables:
 ### Core Technical Concepts
 
 #### - Application of the CRISP-DM Process:
-**1. Business/Research Understanding Phase -** In this phase, we have explored various resources on the internet to learn about the challenges and applications of the Bank marketing dataset for data mining. We did our research on how the Bank marketing dataset can be used to uncover knowledge in various domains like branding and marketing,lending loans or capitals,morgage values,and management, as well as public and personalized insurances .
+**1. Business/Research Understanding Phase -** In this phase, we have explored various resources on the internet to learn about the challenges and applications of the Bank marketing dataset for data mining. We did research on how the Bank marketing dataset can be used to uncover knowledge in various domains like branding and marketing,lending loans or capitals,mortgage values,and management, as well as public and personalized insurances .
 
-**2. Data Understanding Phase -** In this phase, we will make observations by looking at the data and checking of the relationship among the variables, potential independent and dependent variables, continuous variables, flag variables, categorical varaibles, mean, median and standard deviation in the data fetaures.
+**2. Data Understanding Phase -** In this phase, we will make observations by looking at the data and checking the relationship among the variables, potential independent and dependant variables, continuous variables, flag variables, categorical variables, mean, median and standard deviation in the data features.
 
-**3. Data Preparation Phase -** In this phase, we will deal with obsolete/redundant fields, missing values, outliers and make the data useable to feed as an input to the data mining models. Thus minimizing GIGO (Garbage In - Garbage Out)
+**3. Data Preparation Phase -** In this phase, we will deal with obsolete/redundant fields, missing values, outliers and make the data usable to feed as an input to the data mining models. Thus minimizing GIGO (Garbage In - Garbage Out)
 
-**4. Modeling Phase -** we will fit different data mining models on the preprocessed dataset, check the results and try to fine tune the models to achieve better performance.
+**4. Modeling Phase -** We will fit different data mining models on the preprocessed dataset, check the results and try fine tuning the models to achieve better performance.
 
 **5. Evaluation Phase -** We will try to fit the dataset on various data mining models and evaluate their performance by implementing concepts like Cross-validation, Confusion matrix, etc. If the model performance is good and the results are as per the business understanding requirement, we will deploy, else we will repeat the step 1 to 5 repeatedly till we achieve the desired results.
 
@@ -68,7 +68,7 @@ Input variables:
 
 
 ### Data Understanding :
-Marketing of bank products is the aggregate function absorbed at providing facility to satisfy customer’s monetary needs and wants, more than the rivalry keeping in view the organizational objectives. Banking is a personalized service oriented industry and hence should provide services which satisfy the customers’ needs. The marketing tactic includes forestalling, classifying, responding and satisfying the customers’ needs and wants effectually, professionally, and beneficially. It can be said that the presence of the bank has miniature value without the presence of the customer. The main role of the bank is not only to attain and win more and more customers but also to preserve them through operative customer facility. Marketing as associated to banking is to explain a suitable promise to a customer through a variety of products and services and also to confirm operative distribution through satisfaction. The actual contentment delivered to a customer relay on how the customer is cooperated with. It goes on to prominence that every employee from the highest executive to the most junior employee of the bank should be concerned with marketing.
+Marketing of bank products is the aggregate function absorbed at providing facility to satisfy customer’s monetary needs and wants, more than the rivalry keeping in view the organizational objectives. Banking is a personalized service oriented industry and hence should provide services which satisfy the customers needs. The marketing tactic includes forestalling, classifying, responding and satisfying the customers’ needs and wants effectually, professionally, and beneficially. It can be said that the presence of the bank has miniature value without the presence of the customer. The main role of the bank is not only to attain and win more and more customers but also to preserve them through operative customer facility. Marketing as associated to banking is to explain a suitable promise to a customer through a variety of products and services and also to confirm operative distribution through satisfaction. The actual contentment delivered to a customer relay on how the customer is cooperated with. It goes on to prominence that every employee from the highest executive to the most junior employee of the bank should be concerned with marketing.
 
 The dataset is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
 
@@ -104,10 +104,10 @@ Pandas
 Sklearn
 
 2. Handle Missing Values
-When we convert the dataset to the CSV format and get the info about the data it will have missing values which is usually represented by NA. There are many ways to handle missing values. Whenever we come across minute missing values we are going to drop the rows using the .dropna function. Whenever we come across large missing values we are going to perform KNN Imputation and different interpolation methods to handle the missing values.
+When we convert the dataset to the CSV format and get the information about the data, it will have missing values which is usually represented by NA. There are many ways to handle missing values. Whenever we come across minute missing values we are going to drop the rows using the .dropna function. Whenever we come across large missing values we are going to perform KNN Imputation and different interpolation methods to handle the missing values.
 
 3. Encode categorical data.
-As we come across categorical data, we need to encode them into numerical format to proceed further to make the analysis. For this we need to encode the data. We are going to use the one hot encoding to encode the categorical variables when we encounter more than. 2 variables. Whenever we come across one or two variables we are going to use the label encoding. We import LabelEncoder and OneHotEncoder from sklearn.preprosseing.
+As we come across categorical data, we need to encode them into numerical format to proceed further to make the analysis. For this we need to encode the data. We are going to use the one-hot encoding to encode the categorical variables when we encounter more than 2 variables. Whenever we come across one or two variables we are going to use the label encoding. We import LabelEncoder and OneHotEncoder from sklearn.preprosseing.
 
 4. Split the Dataset into Training and Test Set.
 We have to feed our Data Model Training and test datasets. Generally, we split the data with a ratio of 70% for the Training Data and 30% to test data. Training Data is used to build the m model where as Test set is used to evaluate the model.  From sklearn.model_selection we are going to import train_test_split.
@@ -146,14 +146,14 @@ We can use different evaluation techniques like:
 •ROC (Receiver Operating Characteristics) curve
 
 **Accuracy:** The Accuracy is the most commonly used metric to judge a data model and is actually not a clear indicator of the performance. The worse happens when classes are imbalanced.
-it is simply a ratio of correctly predicted observation to the total observations. One may think that, if we have high accuracy then our model is best. Yes, accuracy is a great measure but only when you have symmetric datasets where values of false positive and false negatives are almost same. Therefore, you have to look at other parameters to evaluate the performance of your model. For our model, we have got 0.803 which means our model is approx. 80% accurate.
+It is simply a ratio of correctly predicted observation to the total observations. One may think that, if we have high accuracy then our model is best. Yes, accuracy is a great measure but only when you have symmetric datasets where values of false positive and false negatives are almost same. Therefore, you have to look at other parameters to evaluate the performance of your model. For our model, we have got 0.803 which means our model is approx. 80% accurate.
 
 Accuracy = TP+TN/TP+FP+FN+TN
 
 **Confusion Matrix:** The confusion matrix is the summary of prediction results on a classification problem.
 The number of correct and incorrect predictions are summarized with count values and are broken down by each class. This is the key to the confusion matrix.
 The confusion matrix shows the ways in which the classification model is confused when it makes the predictions.
-It gives us insight not only into the errors being made by a classifier but more importantly the types of errors that are being made So that we can remove them easily.
+It gives us the insight not only into errors being made by a classifier but more importantly the types of errors that are being made. So that we can remove them easily.
 
 **Precision-Recall or PR curve:** Precision-Recall is the required measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is the measure of result relevancy, while recall is a measure of how many truly relevant results are returned.
 The precision-recall curve shows the tradeoff between precision and recall for different threshold. The high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).
