@@ -11,7 +11,7 @@ Most marketing is a means of introducing and enforcing a value to purchasers - c
 [Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 
 ### Team Introduction:
-Aniruddha Sudhindra Shirahatti, Chandrakanth Rajesh, Krishna Vishwanatham. 
+Aniruddha Sudhindra Shirahatti, Chandrakanth Rajesh, Krishna Vishwanatham, Digvijay Gole, Yash Bonde.
 We are having common interest in pursuing specialization in the field of Data Science. We as a group are planning to work on Bank Marketing Data Set to implement the data mining concepts.
 
 ### Data and Source description:-
@@ -172,6 +172,8 @@ We have implemented **Random Forest Classifier (classification model)** that can
 1. Aniruddha Sudhindra Shirahatti
 2. Chandrakanth Rajesh
 3. Krishna Vishwanatham
+4. Digvijay Gole
+5. Yash Bonde
 
 
 ### Contact
@@ -180,4 +182,8 @@ Aniruddha Sudhindra Shirahatti - ashiraha@uncc.edu
 Chandrakanth Rajesh - crajesh@uncc.edu
 
 Krishna Vishwanatham - kvishwa1@uncc.edu
+
+Digvijay Gole - dgole@uncc.edu
+
+Yash Bonde - ybonde1@uncc.edu
 
