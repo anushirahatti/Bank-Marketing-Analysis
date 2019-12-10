@@ -1,11 +1,11 @@
 # SUMMARY
 This Bank Marketing Analysis project is very unique in itself even though this dataset is widely used for implementing Machine Learning projects. In addition to implementation of standard tasks in Data Mining project, the goal of this project is to incorporate Bias Detection and Mitigation strategy, Data Pipelining, Ensemble methods, Feature Selection techniques, and Model Evaluation methods in the process of training and implementing a robust and unbiased Machine Learning model. We have used Cross-industry standard process for data mining.
 
-We did not require much efforts to clean the data as the data quality was reasonalbly good. As the dataset is unbalanced, we used oversampling technique to balance the dataset before data preprocessing. As we are using multiple machine learning models in this project, it is necessary to determine which Machine Learning model gives best predictions on the given dataset, we have pipelined the task of scaling and modelling to determine which model performs well. We have implemented two-step pipeline:
+We did not require much efforts to clean the data as the data quality was reasonalbly good. As the dataset is unbalanced, we used oversampling technique to balance the dataset before data preprocessing. As we are using multiple machine learning models in this project, we have pipelined the task of scaling and modelling to determine which model performs well. We have implemented two-step pipeline:
 - Step 1: Uses Transformer
 - Step 2: Uses Estimator
 
-To avoid overfitting the data to training dataset, we have used cross-validation, feature selection, and ensemble methods (Bagging and Boosting). For gaining confidence in the implimented Machine Learning model, we have used evaluation techniques like confusion matrix, F1-score, and AUC - ROC. Among all the models we implemented (logistic regression, decision tree classifier, random forest classifier, and support vector machines), Random Forest Classifier performed well and we confirmed it using the evaluation metrics.
+To avoid overfitting the data to training dataset, we have used cross-validation, feature selection, and ensemble methods (Bagging and Boosting). For gaining confidence in the implemented Machine Learning model, we have used evaluation techniques like confusion matrix, F1-score, and AUC - ROC. Among all the models we implemented (logistic regression, decision tree classifier, random forest classifier, and support vector machines), Random Forest Classifier performed well and we confirmed it using the evaluation metrics.
 
 ### Bias Detection and Mitigation strategy:
 We have one protected feature in our dataset i.e. "AGE". This raises two problems: 
