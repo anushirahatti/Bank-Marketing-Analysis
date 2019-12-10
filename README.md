@@ -122,9 +122,9 @@ The algorithm that we have used:
 
 * Decision Tree : In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. This algorithm uses a tree-like model of decisions. This algorithm in data mining helps in deriving a strategy to reach a particular goal. This is also widely used in machine learning.
 
-We have **implemented Pipelining** with (MinMaxScaler + LogisticRegression) combination and (StandardScaler + LogisticRegression) combination to automate the standard Machine Learning tasks and explore different combinations of transformers and estimators and their performance on the given dataset.
+* We have **implemented Pipelining** with (MinMaxScaler + LogisticRegression) combination and (StandardScaler + LogisticRegression) combination to automate the standard Machine Learning tasks and explore different combinations of transformers and estimators and their performance on the given dataset.
 
-We have **implemented ensemble methods** with Decision tree and Random forest to make best prediction (whether the client will subscribe for term deposit or not) by aggregating the obtained results.
+* We have **implemented ensemble methods** with Decision tree and Random forest to make best prediction (whether the client will subscribe for term deposit or not) by aggregating the obtained results.
 
 
 ### Evaluation:
