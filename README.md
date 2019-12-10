@@ -1,6 +1,22 @@
-What was unique about the data?  Did you have to deal with imbalance? What data cleaning did you do? Outlier treatment?  Imputation?
-Did you create any new additional features / variables?
-What was the process you used for evaluation?  What was the best result?
-What were the problems you faced? How did you solve them?
-What future work would you like to do? 
-Instructions for individuals that may want to use your work
+This Bank Marketing Analysis project is very unique in itself even though this dataset is widely used for implementing Machine Learning projects. In addition to implementation of standard tasks in Data Mining project, the goal of this project is to incorporate Bias Detection and Mitigation strategy, Data Pipelining, Ensemble methods, Feature Selection techniques, and Model Evaluation methods in the process of training and implementing a robust and unbiased Machine Learning model. We are used Cross-industry standard process for data mining.
+
+We did not require much efforts to clean the data as the data quality was reasonalbly good. As the dataset is unbalanced, we used oversampling technique to balance the dataset before data preprocessing. As we are using multiple machine learning models in this project and it is necessary to determine which Machine Learning model gives best predictions on the given dataset, we have pipelined the task of scaling and modelling to determine which model performs well. We have implemented two-step pipeline:
+Step 1: Uses Transformer
+Step 2: Uses Estimator
+
+To avoid overfitting the data to training dataset, we have used cross-validation, feature selection, and ensemble methods (Bagging and Boosting). For gaining confidence in the implimented Machine Learning model, we have used evaluation techniques like confusion matrix, F1-score, and AUC - ROC. Among all the models we implemented (logistic regression, decision tree classifier, random forest classifier, and support vector machines), Random Forest Classifier performed well and we confirmed it using the evaluation metrics.
+
+Bias Detection and Mitigation strategy:
+We have one protected feature in our dataset i.e. "AGE". This raises two problems: 
+1) the training dataset may not be representative of the true population of people of all age groups, and 
+2) even if it is representative, it is illegal to base any decision on a applicant's age, regardless of whether this is a good prediction based on historical data. 
+To check the fairness, Disparate impact metric should be calculated for the protected attribute "AGE". We observed that the dataset has bias in "AGE". The privileged group (older than 25 years) have approximately 200% more positive outcomes in training dataset.
+Since, Bias Detection and Mitigation is still area of research, we have to come up with the strategies that will help us train model with the data that is fair and makes unbiased predictions.
+
+Future Work:
+We plan to extend this project by continuing research on Bias detection and Mitigation.
+We are willing to incorporate pipelining on a large scale and automate most of the standard processes in data mining.
+We are curious to obtain more data from multiple sources and implement Data pipelining with the help of workflow management tools like Luigi and Airflow.
+
+Instructions for individuals that may want to use our work:
+To know more about the work we are doing and for knowing about our contact details, kindly refer "ProjectINFO.md" file in the Project repository. We are willing to collaborate and exchange ideas. Thank you!
