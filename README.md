@@ -22,3 +22,4 @@ Since, Bias Detection and Mitigation is still area of research, we have to come 
 
 ### Instructions for individuals that may want to use our work:
 To know more about the work we are doing and for knowing about our contact details, kindly refer **"ProjectINFO.md"** file in the Project repository. We are willing to collaborate and exchange ideas. Thank you!
+
