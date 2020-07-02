@@ -8,7 +8,7 @@ We did not require much efforts to clean the data because the data quality was r
 To avoid overfitting the data to training dataset, we have used cross-validation, feature selection, and ensemble methods (Bagging and Boosting). Among all the models we implemented (logistic regression, decision tree classifier, random forest classifier, and support vector machines), Random Forest Classifier performed well. For gaining confidence in the implemented Machine Learning model, we have used evaluation techniques like Confusion Matrix, F1-score, and AUC - ROC.
 
 ### Bias Detection and Mitigation strategy:
-We have one protected feature in our dataset i.e. "AGE". This raises two problems: 
+We have one protected feature in our dataset i.e. "AGE". This raises two problems:- 
 - the training dataset may not be representative of the true population of people of all age groups, and 
 - even if it is representative, it is illegal to base any decision on a applicant's age, regardless of whether this is a good prediction based on historical data. 
 
